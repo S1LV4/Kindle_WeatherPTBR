@@ -14,6 +14,8 @@
     <link rel="stylesheet" type="text/css" href="vendor/weathericons/css/weather-icons.css"/>
     <link rel="stylesheet" type="text/css" href="css/custom-icons.css"/>
     <link rel="stylesheet" type="text/css" href="css/kindle.css"/>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.31/moment-timezone-with-data.min.js"></script>
 
     <script type="text/javascript">
         var jsonp = function () {
@@ -94,8 +96,8 @@
 
         function refreshTT() {
             lastUpdate.innerHTML = momentWithCorrectUtcOffset(new Date()).format("HH:mm");
-	    temp.innerHTML = momentWithCorrectUtcOffset(new Date()).format("MM-DD");
-            window.setTimeout("refreshTT()", 1000 * 30);
+            temp.innerHTML = momentWithCorrectUtcOffset(new Date()).format("MM-DD");
+            window.setTimeout(refreshTT, 1000 * 30);
         }
 
         function processForecastWeather(data) {
@@ -522,10 +524,10 @@
         }
 
         function momentWithCorrectUtcOffset(dateTime) {
-            if (typeof(utcOffset) != 'undefined' && utcOffset != null) {
+            if (typeof utcOffset !== 'undefined' && utcOffset !== null) {
                 return moment(dateTime).utcOffset(utcOffset, false);
             } else {
-               return moment(dateTime);
+                return moment(dateTime);
             }
         }
 
