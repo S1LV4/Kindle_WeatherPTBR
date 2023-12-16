@@ -81,8 +81,7 @@ html.night {
     position: absolute;
     left: 32%;
     top: 2%;
-    font-size: 50px;
-    font-size: 7rem;
+    font-size: 5rem;
     font-weight: bolder;
     text-align: left;
 }
@@ -171,11 +170,10 @@ html.night {
     top: 1%;
 }
 
-.colDesc {
-    font-size: 20px;
-    font-size: 4rem;
+.colDesc {      
+    font-size: 3rem;
     position: relative;
-    bottom: -10%;
+    bottom: -5%;
 }
 
 .portrait .col:nth-last-child(2) {
