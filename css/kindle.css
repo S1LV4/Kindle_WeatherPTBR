@@ -1,32 +1,31 @@
 @font-face {
     font-family: electronicFont;
-    src: url(./font/DS-DIGIB.ttf)
+    src: url(./font/DS-DIGIB.ttf);
 }
 
-html,
-body {
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0;
 }
 
 a {
-    color: #000000;
-    background: #ffffff;
+    color: #000;
+    background: #fff;
 }
 
 .night a {
-    color: #ffffff;
-    background: #000000;
+    color: #fff;
+    background: #000;
 }
 
 html.night {
-    color: #ffffff;
-    background: #000000;
+    color: #fff;
+    background: #000;
 }
 
+/* Elementos principais */
 #cleaner {
     position: absolute;
     top: 0;
@@ -42,60 +41,47 @@ html.night {
     overflow: hidden;
 }
 
+/* Estilos de texto */
 #city {
-    font-size: 50px;
     font-size: 7rem;
     position: absolute;
     top: 1.5%;
     right: 3%;
-    text-decoration: none;
     text-align: right;
 }
 
 #temp {
     font-size: 12rem;
-    display: inline-block;
     font-weight: bolder;
     text-align: center;
     font-family: electronicFont;
-}
-
-.tempWrapper {
-    position: absolute;
-    right: 3%;
-    top: 8%;
+    display: inline-block;
 }
 
 #lastUpdate {
-    position: relative;
-    top: 23%;
-    left: 0%;
-    font-size: 31rem;
+    font-size: 28rem;
     font-weight: bolder;
     text-align: center;
     font-family: electronicFont;
+    position: relative;
+    top: 23%;
+    left: 0%;
 }
 
 #description {
-    position: absolute;
-    left: 32%;
-    top: 2%;
     font-size: 5rem;
     font-weight: bolder;
     text-align: left;
+    position: absolute;
+    left: 32%;
+    top: 2%;
 }
 
 #icon {
-    font-size: 100px;
     font-size: 20rem;
 }
 
-#iconWrapper {
-    position: absolute;
-    left: 3%;
-    top: 3%;
-}
-
+/* Previsão do tempo */
 .forecast {
     position: absolute;
     width: 100%;
@@ -104,10 +90,6 @@ html.night {
     border-top: 5px solid black;
     border-bottom: 1px solid black;
     height: 39%;
-}
-
-.night .forecast {
-    border-color: #ffffff;
 }
 
 .col {
@@ -119,62 +101,53 @@ html.night {
     overflow: hidden;
 }
 
-.night .col {
-    border-color: #ffffff;
-}
-
 .col:last-child {
     border-right: none;
 }
 
 #date {
+    font-size: 7rem;
     position: absolute;
     bottom: 46%;
     left: 3.3%;
-    font-size: 50px;
-    font-size: 7rem;
-
 }
 
 #sun {
+    font-size: 4.9rem;
+    font-weight: bolder;
     position: absolute;
     bottom: 0%;
     left: 3%;
-    font-size: 30px;
-    font-size: 4.9rem;
-    font-weight:bolder;
 }
 
 .forecastIconWrapper {
+    font-size: 14.2rem;
     position: relative;
     top: 5%;
     left: 5%;
-    font-size: 100px;
-    font-size: 14.2rem;
 }
 
 .colTemp {
+    font-size: 8rem;
+    font-weight: bolder;
     position: relative;
     top: 8%;
-    font-size: 50px;
-    font-size: 8rem;
-    font-weight:bolder;
 }
 
 .colTime {
-    position: relative;
-    font-size: 35px;
     font-size: 5rem;
     margin-top: 5%;
     top: 1%;
+    position: relative;
 }
 
-.colDesc {      
+.colDesc {
     font-size: 3rem;
     position: relative;
     bottom: -5%;
 }
 
+/* Orientação do dispositivo */
 .portrait .col:nth-last-child(2) {
     border-right: none;
 }
@@ -184,23 +157,18 @@ html.night {
 }
 
 .landscape #city {
-    font-size: 35.4px;
     font-size: 7rem;
 }
 
 .landscape #temp {
     font-size: 12rem;
-    font-weight: bolder;    
-    text-align: center;
 }
 
 .landscape #lastUpdate {
-    font-size: 141.7px;
     font-size: 28rem;
 }
 
 .landscape #description {
-    font-size: 35.4px;
     font-size: 6rem;
 }
 
@@ -210,32 +178,26 @@ html.night {
 }
 
 .landscape #date {
-    font-size: 35.4px;
     font-size: 7rem;
 }
 
 .landscape #sun {
-    font-size: 24px;
     font-size: 4rem;
 }
 
 .landscape .forecastIconWrapper {
-    font-size: 71.9px;
     font-size: 14.2rem;
 }
 
 .landscape .colTemp {
-    font-size: 35.9px;
     font-size: 7.1rem;
 }
 
 .landscape .colTime {
-    font-size: 25.3px;
     font-size: 5rem;
 }
 
 .landscape .colDesc {
-    font-size: 14.2px;
     font-size: 2.8rem;
 }
 
